@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var portno = 3000;
+var portno = process.env.PORT || 3000;
 
 var middleware = {
 	requireauthentication : function (req , res , next) {
